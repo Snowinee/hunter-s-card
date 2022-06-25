@@ -1,0 +1,108 @@
+:root {
+  --textColor: white;
+  --mainBgColor: rgb(133, 30, 102);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1A1B21;
+}
+
+main {
+  min-height: 100vh;
+}
+main .container {
+  max-width: 350px;
+  margin: 30px auto;
+  border-radius: 15px;
+  background-color: var(--mainBgColor);
+  background-image: linear-gradient(335deg, hsl(55deg, 100%, 50%) 0%, hsl(49deg, 71%, 61%) 12%, hsl(32deg, 38%, 61%) 24%, hsl(311deg, 21%, 50%) 36%, hsl(288deg, 85%, 32%) 46%, hsl(304deg, 86%, 28%) 56%, hsl(321deg, 89%, 30%) 64%, hsl(342deg, 94%, 31%) 73%, hsl(346deg, 97%, 28%) 80%, hsl(333deg, 97%, 23%) 87%, hsl(312deg, 97%, 17%) 94%, hsl(262deg, 98%, 16%) 100%);
+  display: flex;
+  flex-direction: column;
+}
+main .container #profilePicture {
+  width: 350px;
+  height: 350px;
+  background-image: url("../hunter-logo.png");
+  background-position: center;
+  border: none;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+main .container h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--textColor);
+  text-shadow: 2px 3px rgb(161, 69, 126);
+}
+main .container p {
+  text-align: center;
+  color: var(--textColor);
+  font-size: 1rem;
+  margin-top: -5px;
+}
+main .container a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-size: 0.7rem;
+  margin-top: 7px;
+  color: rgb(255, 215, 245);
+}
+main .container .discordBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+main .container .discordBtn button {
+  padding: 10px 50px;
+  border-radius: 6px;
+  background-color: rgb(29, 119, 255);
+  border: none;
+  color: var(--textColor);
+  display: flex;
+  cursor: pointer;
+}
+main .container .discordBtn button i {
+  margin-right: 5px;
+}
+main .container .aboutSection, main .container .interestSection {
+  margin: 15px 25px;
+}
+main .container .aboutSection h3, main .container .interestSection h3 {
+  color: var(--textColor);
+}
+main .container .aboutSection p, main .container .interestSection p {
+  text-align: left;
+  font-size: 0.8rem;
+  margin-top: 1px;
+  font-weight: 300;
+}
+main .container footer {
+  position: relative;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(34, 2, 56, 0.664);
+  border-radius: 0 0 15px 15px;
+}
+main .container footer i {
+  color: var(--textColor);
+  font-size: 1.7rem;
+  transition: all 0.5s;
+}
+main .container footer i:hover {
+  transform: scale(1.3) rotate(360deg);
+}/*# sourceMappingURL=style.css.map */
